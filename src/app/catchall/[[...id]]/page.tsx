@@ -3,7 +3,15 @@ import { getData } from '@/server/server';
 
 export const runtime = 'edge';
 
-const page = async () => {
+interface Props {
+  params: {
+    id: string;
+  };
+}
+
+const page = async ({ params: { id } }: Props) => {
+  console.log(id);
+
   const data = await getData();
 
   return (
