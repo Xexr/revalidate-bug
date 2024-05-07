@@ -5,7 +5,7 @@ import { getData } from '@/server/server';
 export const runtime = 'edge';
 
 const page = async () => {
-  const data = await getData(Number(3));
+  const data = await getData(4);
 
   return (
     <div className="flex w-full items-center p-5 flex-col gap-5">
