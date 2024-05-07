@@ -7,11 +7,11 @@ const Button = () => {
     <button
       className="bg-slate-600 rounded-md p-2 text-gray-200 hover:opacity-80"
       onClick={async () => {
-        const { data: msg } = await action(undefined);
+        const { msg } = await action();
         console.log(msg);
       }}
     >
-      Change quote
+      Revalidate
     </button>
   );
 };

@@ -1,15 +1,9 @@
-import { headers } from 'next/headers';
-
 export const getData = async (id: number) => {
   // pause for 100ms
   await new Promise((resolve) => setTimeout(resolve, 300));
 
-  const currentHeaders = headers();
-  const middlewareMsg = currentHeaders.get('x-hello-from-middleware');
-  console.log('page:', middlewareMsg);
-
   // a random number between 0 & 9
-  // const rand = Math.floor(Math.random() * 10);
+  const rand = Math.floor(Math.random() * 10);
 
   // a list of 10 simpson quotes
   const quotes = [
@@ -25,5 +19,5 @@ export const getData = async (id: number) => {
     'I’m a lean, mean, speed thingy',
   ];
 
-  return quotes[id];
+  return quotes[rand];
 };

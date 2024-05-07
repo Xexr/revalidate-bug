@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  experimental: {
-    scrollRestoration: true,
-    webpackBuildWorker: true,
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
