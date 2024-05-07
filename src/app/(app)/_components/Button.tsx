@@ -11,7 +11,7 @@ const Button = () => {
         console.log(msg);
       }}
     >
-      Revalidate
+      Revalidate action
     </button>
   );
 };
