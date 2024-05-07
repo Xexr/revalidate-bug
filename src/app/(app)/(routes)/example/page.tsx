@@ -1,6 +1,8 @@
 import Button from '@/app/(app)/_components/Button';
 import { getData } from '@/server/server';
 
+export const revalidate = 0;
+
 const page = async () => {
   const data = await getData(4);
 
